@@ -1,0 +1,5 @@
+PRJ;Temperature;Cobertos;Gerados;Cobertura;Mortos;Total;Escore
+23TabelaHash;0.8;49;52;94%;95;166;57%
+23TabelaHash;0.9;50;52;96%;102;166;61%
+23TabelaHash;0.2;49;52;94%;121;166;73%
+23TabelaHash;0.0;0;52;0%;0;166;0%

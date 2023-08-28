@@ -1,0 +1,12 @@
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator,fibIter,5,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator,fibIter,5,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator,fibIter,4,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator,fibIter,4,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator,fibIter,5,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.MathMutator,fibIter,6,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.MathMutator,fibIter,7,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator,fibIter,5,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator,fibIter,9,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE,fibIter,5,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF,fibIter,5,TIMED_OUT,none
+Fibonacci.java,ds.Fibonacci,org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator,fibIter,9,KILLED,ds.FibonacciTest19.testFibIterWithSmallNumber(ds.FibonacciTest19)

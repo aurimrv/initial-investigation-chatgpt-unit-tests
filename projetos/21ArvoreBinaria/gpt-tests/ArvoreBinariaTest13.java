@@ -1,0 +1,57 @@
+package ds;import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.Random;
+
+public class ArvoreBinariaTest13{
+
+
+    @Test
+    public void testPesquisa() {
+        ArvoreBinaria arvore = new ArvoreBinaria();
+        MeuItem item1 = new MeuItem(1);
+        arvore.insere(item1);
+        assertEquals(item1, arvore.pesquisa(item1));
+        
+        MeuItem item2 = new MeuItem(2);
+        assertNull(arvore.pesquisa(item2));
+        
+        MeuItem item3 = new MeuItem(3);
+        arvore.insere(item3);
+        assertEquals(item3, arvore.pesquisa(item3));
+    }
+
+    @Test
+    public void testInsere() {
+        ArvoreBinaria arvore = new ArvoreBinaria();
+        MeuItem item1 = new MeuItem(1);
+        arvore.insere(item1);
+        assertEquals(item1, arvore.pesquisa(item1));
+        
+        MeuItem item2 = new MeuItem(2);
+        arvore.insere(item2);
+        assertEquals(item2, arvore.pesquisa(item2));
+        
+        MeuItem item3 = new MeuItem(3);
+        arvore.insere(item3);
+        assertEquals(item3, arvore.pesquisa(item3));
+    }
+
+    @Test
+    public void testRetira() {
+        ArvoreBinaria arvore = new ArvoreBinaria();
+        MeuItem item1 = new MeuItem(1);
+        arvore.insere(item1);
+        arvore.retira(item1);
+        assertNull(arvore.pesquisa(item1));
+        
+        MeuItem item2 = new MeuItem(2);
+        arvore.insere(item2);
+        arvore.retira(item2);
+        assertNull(arvore.pesquisa(item2));
+        
+        MeuItem item3 = new MeuItem(3);
+        arvore.insere(item3);
+        arvore.retira(item3);
+        assertNull(arvore.pesquisa(item3));
+    }
+}

@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>26Grafo</groupId>
+  <artifactId>26Grafo</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+
+  <name>26Grafo</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>4.13</junit.version>
+    <surefire.version>2.19.1</surefire.version>
+    <pitest.version>1.3.2</pitest.version>
+    <evosuite.version>1.0.6</evosuite.version>
+  </properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${surefire.version}</version>
+				<configuration>
+					<includes>
+						<include>${testName}.java</include>
+					</includes>
+    		        <forkCount>1</forkCount>
+        			<reuseForks>true</reuseForks>
+        			<runOrder>random</runOrder>						
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.pitest</groupId>
+				<artifactId>pitest-maven</artifactId>
+				<version>${pitest.version}</version>
+				<configuration>
+					<targetClasses>
+						<param>${className}</param>
+					</targetClasses>
+					<targetTests>
+						<param>${testName}</param>
+					</targetTests>
+					<timestampedReports>false</timestampedReports>
+					<mutators>
+						<mutator>ALL</mutator>
+					</mutators>
+					<outputFormats>
+						<param>CSV</param>
+						<param>XML</param>
+						<param>HTML</param>
+					</outputFormats>
+					<reportsDirectory>reports/${testName}</reportsDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.pitest</groupId>
+			<artifactId>pitest-maven</artifactId>
+			<version>${pitest.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.evosuite.plugins</groupId>
+			<artifactId>evosuite-maven-plugin</artifactId>
+			<version>${evosuite.version}</version>
+		</dependency>			
+	</dependencies>
+</project>

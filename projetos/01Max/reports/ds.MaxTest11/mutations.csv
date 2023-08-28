@@ -1,0 +1,14 @@
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator,max,5,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator,max,5,SURVIVED,none
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator,max,5,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator,max,4,KILLED,ds.MaxTest11.testMaxWithNegativeValues(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator,max,5,SURVIVED,none
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator,max,5,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator,max,5,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator,max,5,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator,max,6,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE,max,5,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE,max,5,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF,max,5,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF,max,5,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)
+Max.java,ds.Max,org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator,max,6,KILLED,ds.MaxTest11.testMaxWithMultipleElements(ds.MaxTest11)

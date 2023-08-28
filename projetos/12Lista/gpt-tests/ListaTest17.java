@@ -1,0 +1,31 @@
+package ds;import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class ListaTest17{
+
+
+    @Test
+    public void testInsere() {
+        Lista lista = new Lista();
+        lista.insere(1);
+        lista.insere(2);
+        lista.insere(3);
+        assertFalse(lista.vazia());
+    }
+
+    @Test
+    public void testVazia() {
+        Lista lista = new Lista();
+        assertTrue(lista.vazia());
+    }
+
+    @Test
+    public void testImprime() {
+        Lista lista = new Lista();
+        lista.insere(1);
+        lista.insere(2);
+        lista.insere(3);
+        lista.imprime();
+        // You can add assertions here to check the printed output
+    }
+}
